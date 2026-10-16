@@ -11,10 +11,10 @@
 ## 2. Why I Want to Join WhiteHats
 I want to join **WhiteHats** because it is the premier cybersecurity community to translate my passion for applied cryptography, network security, and software development into hands-on offensive and defensive expertise:
 
-- **Passionate Learning Environment:** Collaborating with like-minded peers who are actively exploring penetration testing, web application security, reverse engineering, and threat analysis.
-- **Hands-on Exposure & CTFs:** Actively participating in Capture The Flag (CTF) challenges, hackathons, and security drills to build practical, real-world defensive and offensive problem-solving skills.
-- **Bridging Theory with Practice:** Applying my background in mathematical cryptography, formal protocol verification, and network security to real-world infrastructure and application penetration testing.
-- **Collaborative Growth & Mentorship:** Learning from experienced seniors and contributing back to the student tech ecosystem through technical workshops, tooling, and research.
+- **Bridging Applied Research with Practical Security:** In my research on **Post-Quantum Cryptography & Vehicular Network Security (SOLARIS-IoV / DAME-IoV)** under Prof. Ankush Chanda, I gained extensive experience with formal security protocol verification (**ProVerif 2.05**, **AVISPA/SPAN**), cryptographic randomness testing (**NIST SP 800-22**), lattice security estimation (**Albrecht Estimator**), and simulating adversarial attacks (Replay, MITM, Impersonation). Joining WhiteHats gives me the ideal community to bridge this mathematical and protocol-level foundation with hands-on web application penetration testing, network sniffing, and real-world system defense.
+- **Hands-on Exposure & CTFs:** Actively participating in Capture The Flag (CTF) challenges, hackathons, and security drills to build practical, real-world offensive and defensive problem-solving skills alongside motivated peers.
+- **Passionate Learning Environment & Tooling:** Collaborating with like-minded members who are exploring penetration testing, reverse engineering, web security, and vulnerability research, while contributing to internal tools and security projects.
+- **Collaborative Growth & Mentorship:** Learning from experienced seniors, exchanging technical insights with fellow security enthusiasts, and contributing back to the student tech ecosystem through technical workshops and open-source initiatives.
 
 ---
 
@@ -32,15 +32,3 @@ On July 19, 2024, a faulty content configuration update deployed to CrowdStrike'
 1. **Kernel vs. User-Space Security:** The disaster highlighted the systemic risks of third-party software executing with unrestricted kernel privileges, accelerating industry momentum toward User Mode (Ring 3) endpoint detection architectures.
 2. **Canary & Staged Rollouts:** Security software vendors must implement staged deployment rings and automated canary testing for all updates—including definition and configuration payloads.
 3. **Formal Verification & Memory Safety:** Emphasizes the need for memory-safe languages and rigorous input sanitization, bounds checking, and formal verification on all parsed input formats.
-
----
-
-## 4. Hands-on Security & Verification Tools Used in My Research Project
-In my research project on **Post-Quantum Cryptography & Vehicular Network Security (SOLARIS-IoV / DAME-IoV)** under Prof. Ankush Chanda, I worked with several advanced cybersecurity validation suites and frameworks:
-
-- **ProVerif 2.05:** Automated formal verification tool used to rigorously prove secrecy, forward secrecy, and mutual authentication theorems under the Dolev-Yao adversarial model.
-- **AVISPA (Automated Validation of Internet Security Protocols and Applications) with SPAN:** Multi-oracle automated protocol analysis (OFMC, CL-AtSe, SATMC, TA4SP) verifying immunity against Replay, Man-in-the-Middle (MITM), and Impersonation attacks.
-- **NIST SP 800-22 Cryptographic Randomness Suite:** Evaluated 15 statistical randomness battery tests to verify entropy ($p > 0.01$, Shannon entropy = 3.3216 b/sym) in cryptographic primitives.
-- **Albrecht Lattice Security Estimator (`lattice-estimator`):** Assessed concrete classical ($2^{124.1}$) and quantum ($2^{109.2}$) bit-security margins against lattice reduction algorithms (BKZ 2.0).
-- **Custom Adversarial Attack Simulator (Python):** Developed test suites simulating Replay attacks (temporal freshness check), MITM payload tampering (nonce/parameter mutation), lattice signature forgery, and cloned OBU hardware spoofing.
-- **NS-3 & Eclipse SUMO:** Co-simulated C-V2X PC5 direct sidelink communications, propagation delays, packet loss, and emergency braking kinematics under adversarial network conditions.
