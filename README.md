@@ -30,3 +30,14 @@ On July 19, 2024, a faulty content configuration update deployed to CrowdStrike'
 1. **Kernel-Level Risks & Principle of Least Privilege:** Running third-party security software in kernel mode presents a single point of catastrophic failure. The incident accelerated discussions around moving endpoint detection (EDR) sensors to User Mode (Ring 3) through safer abstractions.
 2. **Staged Rollouts & Canary Deployments:** Critical updates—even configuration definitions—must be staged progressively (canary testing, validation rings) rather than simultaneous global rollout.
 3. **Robust Input Validation & Memory Safety:** Rigorous bounds checking and formal validation of incoming rule files are critical even for internal signed binaries.
+
+---
+
+## 4. Hands-on Security & Verification Tools Used in My Research Project
+In my research project on **Post-Quantum Cryptography & Vehicular Network Security (SOLARIS-IoV / DAME-IoV)** under Prof. Ankush Chanda, I worked extensively with several advanced cybersecurity validation tools and frameworks:
+- **ProVerif 2.05:** Formal cryptographic protocol verifier used to rigorously prove secrecy, forward secrecy, and authentication properties under the Dolev-Yao adversarial model.
+- **AVISPA (Automated Validation of Internet Security Protocols and Applications) & SPAN:** Automated security protocol analysis tool utilizing 4 backend oracles (OFMC, CL-AtSe, SATMC, TA4SP) to evaluate protocol resistance against replay, MITM, and impersonation attacks.
+- **NIST SP 800-22 Cryptographic Randomness Suite:** Evaluated 15 statistical randomness battery tests to verify entropy and unpredictability in cryptographic primitives.
+- **Albrecht Lattice Security Estimator (`lattice-estimator`):** Evaluated concrete classical vs. quantum bit-security margins against lattice reduction algorithms (BKZ 2.0).
+- **Custom Adversarial Attack Simulator (Python):** Developed automated test harnesses simulating Replay Attacks (temporal freshness checks), MITM tampering (nonce/parameter mutation), and Impersonation forgeries.
+- **NS-3 & Eclipse SUMO:** Network and traffic simulator used for C-V2X PC5 sidelink communication, packet loss analysis, and real-time cryptographic overhead evaluation.
